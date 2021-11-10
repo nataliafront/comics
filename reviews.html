@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <nav class="navbar navbar-menu navbar-light">
+            <a href="#" class="logo logo__header">
+              <div class="logo__pic">
+                <svg width="46" height="46" class="logo__icon" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M44.5421 19.346C42.7701 17.914 41.7531 15.79 41.7531 13.519C41.7531 12.745 41.8741 11.976 42.1121 11.231C42.2801 10.706 42.1451 10.131 41.7631 9.733C41.3801 9.335 40.8081 9.18099 40.2811 9.328C39.6081 9.515 38.9321 9.60999 38.2701 9.60999C34.4971 9.60999 31.3011 6.786 30.8401 3.042C30.7651 2.429 30.3211 1.92499 29.7241 1.77099C29.1221 1.61699 28.4951 1.848 28.1341 2.34899C26.7251 4.309 24.4511 5.47899 22.0521 5.47899C19.0381 5.47899 16.3291 3.68599 15.1531 0.911995C14.8911 0.293995 14.2441 -0.0690051 13.5861 0.00999491C12.9201 0.0929949 12.3911 0.608995 12.2901 1.27199C11.7271 4.955 8.61508 7.62799 4.89308 7.62799C4.16408 7.62799 3.43508 7.51999 2.72608 7.30699C2.03308 7.09699 1.28008 7.42 0.955083 8.073C0.627083 8.725 0.817083 9.517 1.40308 9.951C3.34308 11.384 4.45608 13.579 4.45608 15.974C4.45608 18.365 3.29208 20.634 1.34308 22.044C0.844083 22.405 0.615083 23.035 0.769083 23.631C0.922083 24.228 1.42408 24.671 2.03608 24.746C5.44608 25.174 7.48308 29.382 7.26508 33.336C7.23708 33.857 6.84208 36.828 6.51508 39.524C5.95008 44.18 5.95008 44.18 5.94608 44.262C5.92108 44.887 6.28708 45.463 6.86408 45.705C7.05208 45.783 7.25008 45.822 7.44508 45.822C7.85008 45.822 8.24908 45.656 8.53808 45.349C9.13708 44.712 10.0241 43.398 11.5431 41.128C13.3361 38.45 16.6511 33.316 18.3101 32.366C20.4151 31.159 22.1801 32.478 23.4911 35.463C23.7391 36.03 24.2961 36.391 24.9311 36.359C25.5501 36.332 26.0881 35.924 26.2851 35.337C27.3071 32.275 30.1611 30.22 33.3841 30.22C34.8871 30.22 36.3351 30.662 37.5721 31.498C38.0681 31.835 38.7191 31.841 39.2241 31.516C39.7291 31.19 39.9921 30.594 39.8891 30.002C39.8101 29.539 39.7711 29.119 39.7711 28.72C39.7711 25.774 41.5141 23.088 44.2111 21.881C44.6881 21.668 45.0191 21.223 45.0861 20.705C45.1551 20.188 44.9491 19.674 44.5421 19.346ZM36.8121 27.794C32.4591 26.289 27.5141 27.795 24.7901 31.699C23.7741 30.371 21.1041 28.053 17.6361 29.592C15.6631 30.467 13.5521 32.774 9.65508 38.56C9.98308 34.985 10.2211 33.952 10.2661 33.417C10.6231 29.219 8.62208 24.55 5.07208 22.619C7.84408 19.236 8.28308 14.453 5.95008 10.577C9.54508 10.223 12.6191 8.07899 14.2151 4.96599C16.1711 7.16599 19.0011 8.481 22.0561 8.481C24.4531 8.481 26.7601 7.64899 28.6011 6.17699C30.2631 10.139 34.2891 12.836 38.7951 12.598C38.7681 12.904 38.7541 13.212 38.7541 13.52C38.7541 15.99 39.6101 18.334 41.1551 20.197C38.6881 21.967 37.0851 24.74 36.8121 27.794Z" fill="black"/>
+                  <path d="M10.0263 12.329C9.74427 11.815 8.95527 12.184 9.17327 12.731C9.17327 12.731 9.66827 14.275 9.63627 15.551C9.57827 19.431 8.43227 20.532 8.05327 21.622C7.86827 22.144 8.14327 22.717 8.66527 22.901C10.7983 23.65 11.8533 15.653 10.0263 12.329Z" fill="black"/>
+                  <path d="M15.1221 26.324C14.6481 26.512 14.4571 27.05 14.6701 27.486C14.8751 27.908 15.3831 28.084 15.8061 27.879L15.8411 27.861C19.8331 25.932 22.0921 26.621 23.5621 27.927C23.7511 28.095 24.0411 28.094 24.2291 27.918C25.0031 27.191 21.6931 23.73 15.1221 26.324Z" fill="black"/>
+                  <path d="M33.5662 24.896C30.5012 23.633 27.6771 25.503 27.5591 25.584C27.0141 25.953 27.5681 26.783 28.1211 26.412C28.1441 26.395 30.6112 24.762 33.1852 25.822C33.8022 26.07 34.1742 25.146 33.5662 24.896Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="45.822" height="45.822" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="logo__info">
+                <span class="logo__info-top">Comics</span>
+                <span class="logo__info-bottom">Market Place</span>
+              </div>                
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-menu__collapse" id="collapsibleNavbar">
+              <form class="d-flex search">
+                <a class="search-toggle nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Везде
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+                <input class="form-control search__input" type="search" placeholder="Введите поисковый запрос" aria-label="Search">
+                <button class="btn search__btn d-flex align-items-center" type="submit">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M2.25373 2.2532C5.23932 -0.74066 10.0866 -0.747413 13.0805 2.23818C15.9693 5.11894 16.0915 9.75889 13.3584 12.7878L13.9431 13.3724C14.4154 12.9 15.1813 12.8999 15.6537 13.3723C15.6538 13.3723 15.6538 13.3724 15.6539 13.3724L19.6456 17.3642C20.118 17.8365 20.1181 18.6024 19.6458 19.0748C19.6457 19.0749 19.6457 19.0749 19.6456 19.075L19.0755 19.6451C18.6031 20.1173 17.8375 20.1173 17.3651 19.6451L13.3734 15.6534C12.901 15.181 12.9009 14.4151 13.3732 13.9427C13.3733 13.9427 13.3733 13.9426 13.3734 13.9426L12.7887 13.3579C9.65176 16.1928 4.81066 15.9479 1.97577 12.811C-0.762508 9.78096 -0.640184 5.13497 2.25373 2.2532ZM13.9431 15.0828L17.9348 19.0746C18.0923 19.232 18.3475 19.232 18.505 19.0746L19.0751 18.504C19.2323 18.3466 19.2323 18.0917 19.0751 17.9343L15.0834 13.9426C14.9239 13.7901 14.6727 13.7901 14.5132 13.9426L13.9431 14.5131C13.7859 14.6705 13.7859 14.9254 13.9431 15.0828ZM2.82346 12.5172C5.50035 15.194 9.84041 15.194 12.5172 12.5171C15.194 9.84018 15.1939 5.50012 12.517 2.82333C9.84021 0.146596 5.5003 0.146596 2.82346 2.82333C0.150955 5.50204 0.150955 9.83852 2.82346 12.5172Z" fill="#8B8B8B"/>
+                    <path d="M1.82977 3.39212L2.3999 3.96225C0.356408 6.01074 0.356408 9.32671 2.3999 11.3752L1.82977 11.9453C-0.52878 9.58205 -0.52878 5.75541 1.82977 3.39212Z" fill="#8B8B8B"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <path d="M20 5C20 2.23858 17.7614 0 15 0H5C2.23858 0 0 2.23858 0 5V15C0 17.7614 2.23858 20 5 20H15C17.7614 20 20 17.7614 20 15V5Z" fill="white"/>
+                    </clipPath>
+                    </defs>
+                  </svg>                  
+                </button>
+              </form>
+              <nav class="header__navbar">
+                <ul class="navbar-nav header__navbar-nav">
+                  <li class="nav-item header-nav__item">
+                    <a class="nav-link header-nav__link" href="#">DC</a>
+                  </li>
+                  <li class="nav-item header-nav__item">
+                    <a class="nav-link header-nav__link" href="#">Marvel</a>
+                  </li>
+                  <li class="nav-item header-nav__item">
+                    <a class="nav-link header-nav__link" href="#">Bubble</a>
+                  </li>                                                
+                  <li class="nav-item header-nav__item">
+                    <a class="nav-link header-nav__link" href="#">Манга</a>
+                  </li>
+                  <li class="nav-item header-nav__item">
+                    <a class="nav-link header-nav__link" href="#">Русское издание</a>
+                  </li>
+                  <li class="nav-item header-nav__item">
+                    <a class="nav-link header-nav__link" href="#">English edition</a>
+                  </li>
+                  <li class="nav-item header-nav__item">
+                    <a class="nav-link header-nav__link" href="#">Walking dead</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="person">
+                <div class="d-flex person__wrap">
+                  <button type="button" class="btn btn__person">
+                    <svg width="30" height="30" class="btn__person-icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 15H8.4375C7.94022 15 7.46331 15.1975 7.11167 15.5492C6.76004 15.9008 6.5625 16.3777 6.5625 16.875V26.25C6.5625 26.7473 6.76004 27.2242 7.11167 27.5758C7.46331 27.9275 7.94022 28.125 8.4375 28.125H21.5625C22.0598 28.125 22.5367 27.9275 22.8883 27.5758C23.24 27.2242 23.4375 26.7473 23.4375 26.25V16.875C23.4375 16.3777 23.24 15.9008 22.8883 15.5492C22.5367 15.1975 22.0598 15 21.5625 15ZM8.4375 13.125C7.44294 13.125 6.48911 13.5201 5.78585 14.2233C5.08259 14.9266 4.6875 15.8804 4.6875 16.875V26.25C4.6875 27.2446 5.08259 28.1984 5.78585 28.9016C6.48911 29.6049 7.44294 30 8.4375 30H21.5625C22.5571 30 23.5109 29.6049 24.2141 28.9016C24.9174 28.1984 25.3125 27.2446 25.3125 26.25V16.875C25.3125 15.8804 24.9174 14.9266 24.2141 14.2233C23.5109 13.5201 22.5571 13.125 21.5625 13.125H8.4375ZM8.4375 7.5C8.4375 5.75952 9.1289 4.09032 10.3596 2.85961C11.5903 1.6289 13.2595 0.9375 15 0.9375C16.7405 0.9375 18.4097 1.6289 19.6404 2.85961C20.8711 4.09032 21.5625 5.75952 21.5625 7.5V13.125H19.6875V7.5C19.6875 6.2568 19.1936 5.06451 18.3146 4.18544C17.4355 3.30636 16.2432 2.8125 15 2.8125C13.7568 2.8125 12.5645 3.30636 11.6854 4.18544C10.8064 5.06451 10.3125 6.2568 10.3125 7.5V13.125H8.4375V7.5Z" fill="black"/>
+                    </svg>                  
+                  </button>
+                  <button type="button" class="btn btn__person">
+                    <svg width="30" height="30" class="btn__person-icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.625 26.25C20.625 26.25 22.5 26.25 22.5 24.375C22.5 22.5 20.625 16.875 11.25 16.875C1.875 16.875 0 22.5 0 24.375C0 26.25 1.875 26.25 1.875 26.25H20.625ZM1.88437 24.48V24.4762V24.48ZM1.91625 24.375H20.5837C20.5925 24.374 20.6013 24.3727 20.61 24.3713L20.625 24.3675C20.6231 23.9062 20.3363 22.5187 19.065 21.2475C17.8425 20.025 15.5419 18.75 11.25 18.75C6.95625 18.75 4.6575 20.025 3.435 21.2475C2.16375 22.5187 1.87875 23.9062 1.875 24.3675C1.88872 24.3701 1.90247 24.3726 1.91625 24.375ZM20.6175 24.48V24.4762V24.48ZM11.25 13.125C12.2446 13.125 13.1984 12.7299 13.9017 12.0267C14.6049 11.3234 15 10.3696 15 9.375C15 8.38044 14.6049 7.42661 13.9017 6.72335C13.1984 6.02009 12.2446 5.625 11.25 5.625C10.2554 5.625 9.30161 6.02009 8.59835 6.72335C7.89509 7.42661 7.5 8.38044 7.5 9.375C7.5 10.3696 7.89509 11.3234 8.59835 12.0267C9.30161 12.7299 10.2554 13.125 11.25 13.125ZM16.875 9.375C16.875 10.8668 16.2824 12.2976 15.2275 13.3525C14.1726 14.4074 12.7418 15 11.25 15C9.75816 15 8.32742 14.4074 7.27252 13.3525C6.21763 12.2976 5.625 10.8668 5.625 9.375C5.625 7.88316 6.21763 6.45242 7.27252 5.39752C8.32742 4.34263 9.75816 3.75 11.25 3.75C12.7418 3.75 14.1726 4.34263 15.2275 5.39752C16.2824 6.45242 16.875 7.88316 16.875 9.375ZM25.3125 9.375C25.5611 9.375 25.7996 9.47377 25.9754 9.64959C26.1512 9.8254 26.25 10.0639 26.25 10.3125V14.0625C26.25 14.3111 26.1512 14.5496 25.9754 14.7254C25.7996 14.9012 25.5611 15 25.3125 15H21.5625C21.3139 15 21.0754 14.9012 20.8996 14.7254C20.7238 14.5496 20.625 14.3111 20.625 14.0625C20.625 13.8139 20.7238 13.5754 20.8996 13.3996C21.0754 13.2238 21.3139 13.125 21.5625 13.125H24.375V10.3125C24.375 10.0639 24.4738 9.8254 24.6496 9.64959C24.8254 9.47377 25.0639 9.375 25.3125 9.375Z" fill="black"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M24.375 14.0625C24.375 13.8139 24.4738 13.5754 24.6496 13.3996C24.8254 13.2238 25.0639 13.125 25.3125 13.125H29.0625C29.3111 13.125 29.5496 13.2238 29.7254 13.3996C29.9012 13.5754 30 13.8139 30 14.0625C30 14.3111 29.9012 14.5496 29.7254 14.7254C29.5496 14.9012 29.3111 15 29.0625 15H26.25V17.8125C26.25 18.0611 26.1512 18.2996 25.9754 18.4754C25.7996 18.6512 25.5611 18.75 25.3125 18.75C25.0639 18.75 24.8254 18.6512 24.6496 18.4754C24.4738 18.2996 24.375 18.0611 24.375 17.8125V14.0625Z" fill="black"/>
+                    </svg>                  
+                  </button>
+                </div>
+              </div> 
+            </div>  
+          </nav>
+          <div class="header__top">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-2 col-md-3 col-sm-3">
+                <a href="#" class="logo logo__header">
+                  <div class="logo__pic">
+                    <svg width="46" height="46" class="logo__icon" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M44.5421 19.346C42.7701 17.914 41.7531 15.79 41.7531 13.519C41.7531 12.745 41.8741 11.976 42.1121 11.231C42.2801 10.706 42.1451 10.131 41.7631 9.733C41.3801 9.335 40.8081 9.18099 40.2811 9.328C39.6081 9.515 38.9321 9.60999 38.2701 9.60999C34.4971 9.60999 31.3011 6.786 30.8401 3.042C30.7651 2.429 30.3211 1.92499 29.7241 1.77099C29.1221 1.61699 28.4951 1.848 28.1341 2.34899C26.7251 4.309 24.4511 5.47899 22.0521 5.47899C19.0381 5.47899 16.3291 3.68599 15.1531 0.911995C14.8911 0.293995 14.2441 -0.0690051 13.5861 0.00999491C12.9201 0.0929949 12.3911 0.608995 12.2901 1.27199C11.7271 4.955 8.61508 7.62799 4.89308 7.62799C4.16408 7.62799 3.43508 7.51999 2.72608 7.30699C2.03308 7.09699 1.28008 7.42 0.955083 8.073C0.627083 8.725 0.817083 9.517 1.40308 9.951C3.34308 11.384 4.45608 13.579 4.45608 15.974C4.45608 18.365 3.29208 20.634 1.34308 22.044C0.844083 22.405 0.615083 23.035 0.769083 23.631C0.922083 24.228 1.42408 24.671 2.03608 24.746C5.44608 25.174 7.48308 29.382 7.26508 33.336C7.23708 33.857 6.84208 36.828 6.51508 39.524C5.95008 44.18 5.95008 44.18 5.94608 44.262C5.92108 44.887 6.28708 45.463 6.86408 45.705C7.05208 45.783 7.25008 45.822 7.44508 45.822C7.85008 45.822 8.24908 45.656 8.53808 45.349C9.13708 44.712 10.0241 43.398 11.5431 41.128C13.3361 38.45 16.6511 33.316 18.3101 32.366C20.4151 31.159 22.1801 32.478 23.4911 35.463C23.7391 36.03 24.2961 36.391 24.9311 36.359C25.5501 36.332 26.0881 35.924 26.2851 35.337C27.3071 32.275 30.1611 30.22 33.3841 30.22C34.8871 30.22 36.3351 30.662 37.5721 31.498C38.0681 31.835 38.7191 31.841 39.2241 31.516C39.7291 31.19 39.9921 30.594 39.8891 30.002C39.8101 29.539 39.7711 29.119 39.7711 28.72C39.7711 25.774 41.5141 23.088 44.2111 21.881C44.6881 21.668 45.0191 21.223 45.0861 20.705C45.1551 20.188 44.9491 19.674 44.5421 19.346ZM36.8121 27.794C32.4591 26.289 27.5141 27.795 24.7901 31.699C23.7741 30.371 21.1041 28.053 17.6361 29.592C15.6631 30.467 13.5521 32.774 9.65508 38.56C9.98308 34.985 10.2211 33.952 10.2661 33.417C10.6231 29.219 8.62208 24.55 5.07208 22.619C7.84408 19.236 8.28308 14.453 5.95008 10.577C9.54508 10.223 12.6191 8.07899 14.2151 4.96599C16.1711 7.16599 19.0011 8.481 22.0561 8.481C24.4531 8.481 26.7601 7.64899 28.6011 6.17699C30.2631 10.139 34.2891 12.836 38.7951 12.598C38.7681 12.904 38.7541 13.212 38.7541 13.52C38.7541 15.99 39.6101 18.334 41.1551 20.197C38.6881 21.967 37.0851 24.74 36.8121 27.794Z" fill="black"/>
+                      <path d="M10.0263 12.329C9.74427 11.815 8.95527 12.184 9.17327 12.731C9.17327 12.731 9.66827 14.275 9.63627 15.551C9.57827 19.431 8.43227 20.532 8.05327 21.622C7.86827 22.144 8.14327 22.717 8.66527 22.901C10.7983 23.65 11.8533 15.653 10.0263 12.329Z" fill="black"/>
+                      <path d="M15.1221 26.324C14.6481 26.512 14.4571 27.05 14.6701 27.486C14.8751 27.908 15.3831 28.084 15.8061 27.879L15.8411 27.861C19.8331 25.932 22.0921 26.621 23.5621 27.927C23.7511 28.095 24.0411 28.094 24.2291 27.918C25.0031 27.191 21.6931 23.73 15.1221 26.324Z" fill="black"/>
+                      <path d="M33.5662 24.896C30.5012 23.633 27.6771 25.503 27.5591 25.584C27.0141 25.953 27.5681 26.783 28.1211 26.412C28.1441 26.395 30.6112 24.762 33.1852 25.822C33.8022 26.07 34.1742 25.146 33.5662 24.896Z" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <rect width="45.822" height="45.822" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="logo__info">
+                    <span class="logo__info-top">Comics</span>
+                    <span class="logo__info-bottom">Market Place</span>
+                  </div>                
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="menu">
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Категории</a>
+                    <div class="header__bottom">
+                      <div class="container">
+                        <div class="row d-flex align-items-center">
+                          <div class="header__bottom-wrap">
+                            <div class="offset-lg-2 col-lg-10 offset-md-0 col-md-12 col-10">
+                              <nav class="header__navbar">
+                                <ul class="navbar-nav header__navbar-nav">
+                                  <li class="header-nav__item">
+                                    <a class="header-nav__link" href="#">DC</a>
+                                  </li>
+                                  <li class="nav-item header-nav__item">
+                                    <a class="nav-link header-nav__link" href="#">Marvel</a>
+                                  </li>
+                                  <li class="nav-item header-nav__item">
+                                    <a class="nav-link header-nav__link" href="#">Bubble</a>
+                                  </li>                                                
+                                  <li class="nav-item header-nav__item">
+                                    <a class="nav-link header-nav__link" href="#">Манга</a>
+                                  </li>
+                                  <li class="nav-item header-nav__item">
+                                    <a class="nav-link header-nav__link" href="#">Русское издание</a>
+                                  </li>
+                                  <li class="nav-item header-nav__item">
+                                    <a class="nav-link header-nav__link" href="#">English edition</a>
+                                  </li>
+                                  <li class="nav-item header-nav__item">
+                                    <a class="nav-link header-nav__link" href="#">Walking dead</a>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <!-- <nav class="header__navbar navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav header__navbar-nav">
+                                      <li class="nav-item header-nav__item">
+                                        <a class="nav-link header-nav__link" href="#">DC</a>
+                                      </li>
+                                      <li class="nav-item header-nav__item">
+                                        <a class="nav-link header-nav__link" href="#">Marvel</a>
+                                      </li>
+                                      <li class="nav-item header-nav__item">
+                                        <a class="nav-link header-nav__link" href="#">Bubble</a>
+                                      </li>                                                
+                                      <li class="nav-item header-nav__item">
+                                        <a class="nav-link header-nav__link" href="#">Манга</a>
+                                      </li>
+                                      <li class="nav-item header-nav__item">
+                                        <a class="nav-link header-nav__link" href="#">Русское издание</a>
+                                      </li>
+                                      <li class="nav-item header-nav__item">
+                                        <a class="nav-link header-nav__link" href="#">English edition</a>
+                                      </li>
+                                      <li class="nav-item header-nav__item">
+                                        <a class="nav-link header-nav__link" href="#">Walking dead</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav> -->
+                              
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-5 col-sm-5">
+                <form class="d-flex search">
+                  <a class="search-toggle nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Везде
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                  </ul>
+                  <input class="form-control search__input" type="search" placeholder="Введите поисковый запрос" aria-label="Search">
+                  <button class="btn search__btn d-flex align-items-center" type="submit">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M2.25373 2.2532C5.23932 -0.74066 10.0866 -0.747413 13.0805 2.23818C15.9693 5.11894 16.0915 9.75889 13.3584 12.7878L13.9431 13.3724C14.4154 12.9 15.1813 12.8999 15.6537 13.3723C15.6538 13.3723 15.6538 13.3724 15.6539 13.3724L19.6456 17.3642C20.118 17.8365 20.1181 18.6024 19.6458 19.0748C19.6457 19.0749 19.6457 19.0749 19.6456 19.075L19.0755 19.6451C18.6031 20.1173 17.8375 20.1173 17.3651 19.6451L13.3734 15.6534C12.901 15.181 12.9009 14.4151 13.3732 13.9427C13.3733 13.9427 13.3733 13.9426 13.3734 13.9426L12.7887 13.3579C9.65176 16.1928 4.81066 15.9479 1.97577 12.811C-0.762508 9.78096 -0.640184 5.13497 2.25373 2.2532ZM13.9431 15.0828L17.9348 19.0746C18.0923 19.232 18.3475 19.232 18.505 19.0746L19.0751 18.504C19.2323 18.3466 19.2323 18.0917 19.0751 17.9343L15.0834 13.9426C14.9239 13.7901 14.6727 13.7901 14.5132 13.9426L13.9431 14.5131C13.7859 14.6705 13.7859 14.9254 13.9431 15.0828ZM2.82346 12.5172C5.50035 15.194 9.84041 15.194 12.5172 12.5171C15.194 9.84018 15.1939 5.50012 12.517 2.82333C9.84021 0.146596 5.5003 0.146596 2.82346 2.82333C0.150955 5.50204 0.150955 9.83852 2.82346 12.5172Z" fill="#8B8B8B"/>
+                      <path d="M1.82977 3.39212L2.3999 3.96225C0.356408 6.01074 0.356408 9.32671 2.3999 11.3752L1.82977 11.9453C-0.52878 9.58205 -0.52878 5.75541 1.82977 3.39212Z" fill="#8B8B8B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <path d="M20 5C20 2.23858 17.7614 0 15 0H5C2.23858 0 0 2.23858 0 5V15C0 17.7614 2.23858 20 5 20H15C17.7614 20 20 17.7614 20 15V5Z" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>                  
+                  </button>
+                </form>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="person">
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn__person">
+                      <svg width="30" height="30" class="btn__person-icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 15H8.4375C7.94022 15 7.46331 15.1975 7.11167 15.5492C6.76004 15.9008 6.5625 16.3777 6.5625 16.875V26.25C6.5625 26.7473 6.76004 27.2242 7.11167 27.5758C7.46331 27.9275 7.94022 28.125 8.4375 28.125H21.5625C22.0598 28.125 22.5367 27.9275 22.8883 27.5758C23.24 27.2242 23.4375 26.7473 23.4375 26.25V16.875C23.4375 16.3777 23.24 15.9008 22.8883 15.5492C22.5367 15.1975 22.0598 15 21.5625 15ZM8.4375 13.125C7.44294 13.125 6.48911 13.5201 5.78585 14.2233C5.08259 14.9266 4.6875 15.8804 4.6875 16.875V26.25C4.6875 27.2446 5.08259 28.1984 5.78585 28.9016C6.48911 29.6049 7.44294 30 8.4375 30H21.5625C22.5571 30 23.5109 29.6049 24.2141 28.9016C24.9174 28.1984 25.3125 27.2446 25.3125 26.25V16.875C25.3125 15.8804 24.9174 14.9266 24.2141 14.2233C23.5109 13.5201 22.5571 13.125 21.5625 13.125H8.4375ZM8.4375 7.5C8.4375 5.75952 9.1289 4.09032 10.3596 2.85961C11.5903 1.6289 13.2595 0.9375 15 0.9375C16.7405 0.9375 18.4097 1.6289 19.6404 2.85961C20.8711 4.09032 21.5625 5.75952 21.5625 7.5V13.125H19.6875V7.5C19.6875 6.2568 19.1936 5.06451 18.3146 4.18544C17.4355 3.30636 16.2432 2.8125 15 2.8125C13.7568 2.8125 12.5645 3.30636 11.6854 4.18544C10.8064 5.06451 10.3125 6.2568 10.3125 7.5V13.125H8.4375V7.5Z" fill="black"/>
+                      </svg>                  
+                    </button>
+                    <button type="button" class="btn btn__person">
+                      <svg width="30" height="30" class="btn__person-icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.625 26.25C20.625 26.25 22.5 26.25 22.5 24.375C22.5 22.5 20.625 16.875 11.25 16.875C1.875 16.875 0 22.5 0 24.375C0 26.25 1.875 26.25 1.875 26.25H20.625ZM1.88437 24.48V24.4762V24.48ZM1.91625 24.375H20.5837C20.5925 24.374 20.6013 24.3727 20.61 24.3713L20.625 24.3675C20.6231 23.9062 20.3363 22.5187 19.065 21.2475C17.8425 20.025 15.5419 18.75 11.25 18.75C6.95625 18.75 4.6575 20.025 3.435 21.2475C2.16375 22.5187 1.87875 23.9062 1.875 24.3675C1.88872 24.3701 1.90247 24.3726 1.91625 24.375ZM20.6175 24.48V24.4762V24.48ZM11.25 13.125C12.2446 13.125 13.1984 12.7299 13.9017 12.0267C14.6049 11.3234 15 10.3696 15 9.375C15 8.38044 14.6049 7.42661 13.9017 6.72335C13.1984 6.02009 12.2446 5.625 11.25 5.625C10.2554 5.625 9.30161 6.02009 8.59835 6.72335C7.89509 7.42661 7.5 8.38044 7.5 9.375C7.5 10.3696 7.89509 11.3234 8.59835 12.0267C9.30161 12.7299 10.2554 13.125 11.25 13.125ZM16.875 9.375C16.875 10.8668 16.2824 12.2976 15.2275 13.3525C14.1726 14.4074 12.7418 15 11.25 15C9.75816 15 8.32742 14.4074 7.27252 13.3525C6.21763 12.2976 5.625 10.8668 5.625 9.375C5.625 7.88316 6.21763 6.45242 7.27252 5.39752C8.32742 4.34263 9.75816 3.75 11.25 3.75C12.7418 3.75 14.1726 4.34263 15.2275 5.39752C16.2824 6.45242 16.875 7.88316 16.875 9.375ZM25.3125 9.375C25.5611 9.375 25.7996 9.47377 25.9754 9.64959C26.1512 9.8254 26.25 10.0639 26.25 10.3125V14.0625C26.25 14.3111 26.1512 14.5496 25.9754 14.7254C25.7996 14.9012 25.5611 15 25.3125 15H21.5625C21.3139 15 21.0754 14.9012 20.8996 14.7254C20.7238 14.5496 20.625 14.3111 20.625 14.0625C20.625 13.8139 20.7238 13.5754 20.8996 13.3996C21.0754 13.2238 21.3139 13.125 21.5625 13.125H24.375V10.3125C24.375 10.0639 24.4738 9.8254 24.6496 9.64959C24.8254 9.47377 25.0639 9.375 25.3125 9.375Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.375 14.0625C24.375 13.8139 24.4738 13.5754 24.6496 13.3996C24.8254 13.2238 25.0639 13.125 25.3125 13.125H29.0625C29.3111 13.125 29.5496 13.2238 29.7254 13.3996C29.9012 13.5754 30 13.8139 30 14.0625C30 14.3111 29.9012 14.5496 29.7254 14.7254C29.5496 14.9012 29.3111 15 29.0625 15H26.25V17.8125C26.25 18.0611 26.1512 18.2996 25.9754 18.4754C25.7996 18.6512 25.5611 18.75 25.3125 18.75C25.0639 18.75 24.8254 18.6512 24.6496 18.4754C24.4738 18.2996 24.375 18.0611 24.375 17.8125V14.0625Z" fill="black"/>
+                      </svg>                  
+                    </button>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    <div class="main">
+      <div class="main__header">
+        <div class="container">
+          <div class="main__header-wrap">
+            <div class="row d-flex align-items-center flex-lg-row flex-md-row flex-sm-row flex-column">
+              <div class="col-lg-2 col-md-3 col-sm-3 col-12">
+                <button type="button" class="btn btn__back">
+                  <svg width="40" height="24" class="btn__back-icon" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6348 6.969C19.7512 7.03867 19.8436 7.12143 19.9066 7.21255C19.9696 7.30366 20.002 7.40135 20.002 7.5C20.002 7.59865 19.9696 7.69633 19.9066 7.78745C19.8436 7.87857 19.7512 7.96133 19.6348 8.031L13.0173 12L19.6348 15.969C19.751 16.0387 19.8432 16.1215 19.9061 16.2126C19.969 16.3037 20.0014 16.4014 20.0014 16.5C20.0014 16.5986 19.969 16.6963 19.9061 16.7874C19.8432 16.8785 19.751 16.9613 19.6348 17.031C19.5186 17.1007 19.3806 17.156 19.2288 17.1938C19.0769 17.2315 18.9142 17.2509 18.7498 17.2509C18.5854 17.2509 18.4227 17.2315 18.2708 17.1938C18.119 17.156 17.981 17.1007 17.8648 17.031L10.3648 12.531C10.2484 12.4613 10.156 12.3786 10.093 12.2874C10.03 12.1963 9.99756 12.0986 9.99756 12C9.99756 11.9013 10.03 11.8037 10.093 11.7125C10.156 11.6214 10.2484 11.5387 10.3648 11.469L17.8648 6.969C17.9809 6.89915 18.1188 6.84374 18.2707 6.80593C18.4226 6.76812 18.5854 6.74866 18.7498 6.74866C18.9142 6.74866 19.077 6.76812 19.2289 6.80593C19.3807 6.84374 19.5187 6.89915 19.6348 6.969Z" fill="#505050"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 12C11.25 11.8011 11.3817 11.6103 11.6161 11.4697C11.8505 11.329 12.1685 11.25 12.5 11.25H28.75C29.0815 11.25 29.3995 11.329 29.6339 11.4697C29.8683 11.6103 30 11.8011 30 12C30 12.1989 29.8683 12.3897 29.6339 12.5303C29.3995 12.671 29.0815 12.75 28.75 12.75H12.5C12.1685 12.75 11.8505 12.671 11.6161 12.5303C11.3817 12.3897 11.25 12.1989 11.25 12Z" fill="#505050"/>
+                  </svg>
+                  <span class="btn__back-text">Назад</span>                      
+                </button>
+              </div>
+              <div class="col-lg-9 col-md-7 col-sm-7 col-12">
+                <h1 class="title">Vitalya Bolyshin</h1>
+              </div>
+              <div class="col-lg-1 col-md-2 col-sm-2 col-12">
+                <span class="main__span">отзывы</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>        
+      <div class="main__body">
+        <div class="recall">
+          <div class="container">
+            <div class="recall__wrap">
+              <div class="row flex-lg-row flex-md-row flex-sm-row flex-column">
+                <div class="col-lg-3 col-md-4 ">
+                  <div class="seller__nav d-flex align-items-start">
+                    <div class="seller__nav-pills nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="seller__nav-link nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-profile-home" aria-selected="true">Профиль продавца</button>
+                      <button class="seller__nav-link nav-link" id="v-pills-products-tab" data-bs-toggle="pill" data-bs-target="#v-pills-products" type="button" role="tab" aria-controls="v-pills-products" aria-selected="false">Товары продавца</button>
+                      <button class="seller__nav-link nav-link" id="v-pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reviews" type="button" role="tab" aria-controls="v-pills-reviews" aria-selected="false">Отзывы о продавце</button>
+                      <button class="seller__nav-link nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false">Связаться с продавцом</button>
+                      <button class="seller__nav-link nav-link" id="v-pills-complaint-tab" data-bs-toggle="pill" data-bs-target="#v-pills-complaint" type="button" role="tab" aria-controls="v-pills-complaint" aria-selected="false">Подать жалобу</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                  <div class="d-flex align-items-start">
+                    <div class="seller__content tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-profile-tab">1</div>
+                      <div class="tab-pane fade" id="v-pills-products" role="tabpanel" aria-labelledby="v-pills-products-tab">2</div>
+                      <div class="tab-pane fade" id="v-pills-reviews" role="tabpanel" aria-labelledby="v-pills-reviews-tab">
+                        <div class="reviews">
+                          <div class="reviews__user">
+                            <div class="row flex-lg-row flex-md-row flex-sm-row flex-column">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="reviews__user-info">
+                                  <div class="reviews__user-pic">
+                                    <img src="images/reviews-user-img.png" alt="" class="reviews__user-img">
+                                  </div>
+                                  <span class="reviews__user-name">Vitalya Bolyshin</span>
+                                  <span class="reviews__user-city">г. Тольятти</span>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="reviews__user-status reviews-status">
+                                  <svg width="30" height="30" class="reviews-status__icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <rect width="30" height="30" fill="#F8F8F8"/>
+                                    <path d="M15 6.5625C15 6.31386 14.9012 6.0754 14.7254 5.89959C14.5496 5.72377 14.3111 5.625 14.0625 5.625C13.8139 5.625 13.5754 5.72377 13.3996 5.89959C13.2238 6.0754 13.125 6.31386 13.125 6.5625V16.875C13.1251 17.0402 13.1688 17.2025 13.2518 17.3455C13.3347 17.4884 13.454 17.6068 13.5975 17.6888L20.16 21.4388C20.3754 21.5551 20.6277 21.5827 20.8631 21.5155C21.0985 21.4483 21.2983 21.2917 21.4197 21.0791C21.5412 20.8666 21.5747 20.615 21.5131 20.378C21.4514 20.1411 21.2996 19.9377 21.09 19.8113L15 16.3313V6.5625Z" fill="black"/>
+                                    <path d="M15 30C18.9782 30 22.7936 28.4196 25.6066 25.6066C28.4196 22.7936 30 18.9782 30 15C30 11.0218 28.4196 7.20644 25.6066 4.3934C22.7936 1.58035 18.9782 0 15 0C11.0218 0 7.20644 1.58035 4.3934 4.3934C1.58035 7.20644 0 11.0218 0 15C0 18.9782 1.58035 22.7936 4.3934 25.6066C7.20644 28.4196 11.0218 30 15 30ZM28.125 15C28.125 18.481 26.7422 21.8194 24.2808 24.2808C21.8194 26.7422 18.481 28.125 15 28.125C11.519 28.125 8.18064 26.7422 5.71922 24.2808C3.25781 21.8194 1.875 18.481 1.875 15C1.875 11.519 3.25781 8.18064 5.71922 5.71922C8.18064 3.25781 11.519 1.875 15 1.875C18.481 1.875 21.8194 3.25781 24.2808 5.71922C26.7422 8.18064 28.125 11.519 28.125 15Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="30" height="30" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                  </svg>
+                                  <div class="reviews-status__info">
+                                    <span class="reviews-status__text">Был в сети</span>
+                                    <span class="reviews-status__time">16 часов назад</span>
+                                  </div>                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="reviews__statistic">
+                            <div class="row flex-lg-row flex-md-row flex-sm-row flex-column">
+                              <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                                <div class="reviews__statistic-item">
+                                  <span class="reviews__statistic-category">Продажи</span>
+                                  <span class="reviews__statistic-count">32</span>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                                <div class="reviews__statistic-item">
+                                  <span class="reviews__statistic-category">Отзывов оставил</span>
+                                  <span class="reviews__statistic-count">15</span>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                                <div class="reviews__statistic-item">
+                                  <span class="reviews__statistic-category">Положительные отзывы</span>
+                                  <span class="reviews__statistic-count">19</span>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                                <div class="reviews__statistic-item">
+                                  <span class="reviews__statistic-category">Негативные отзывы</span>
+                                  <span class="reviews__statistic-count">3</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="reviews__list">
+                            <div class="reviews-item d-flex">
+                              <div class="reviews-item__pic">
+                                <img src="images/reviews-item.png" alt="" class="reviews-item__img">
+                              </div>
+                              <div class="reviews-item__info">
+                                <div class="reviews-item__header d-flex flex-lg-row flex-md-row flex-sm-row flex-column">
+                                  <div class="reviews-item__header-left">
+                                    <span class="reviews-item__header-name">Henrry 2 balls</span>
+                                    <span class="reviews-item__header-day">2 дня назад</span>
+                                  </div>
+                                  <span class="reviews-item__header-character">негативный отзыв</span>
+                                </div>
+                                <p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam commodo tempus sem gravida sit volutpat, adipiscing. Pharetra, nulla turpis magna lorem urna, vel gravida. Laoreet egestas curabitur faucibus ut. Massa mauris amet mauris euismod tellus venenatis mi eget. In nisi, ultricies consequat porttitor eget. Tincidunt vivamus ligula sem nullam non. Faucibus scelerisque mollis tincidunt diam. Justo odio rhoncus pellentesque mauris, nunc sit. Sapien molestie commodo tincidunt nibh libero. Mi elementum massa adipiscing ac amet eu ac etiam. Quis arcu pellentesque congue vitae non amet, et. Suspendisse cras hendrerit arcu, at. Ultricies sollicitudin nisl vitae ornare. A, euismod felis, enim, tortor.</p>
+                              </div>
+                            </div>
+                            <div class="reviews-item d-flex">
+                              <div class="reviews-item__pic">
+                                <img src="images/reviews-item.png" alt="" class="reviews-item__img">
+                              </div>
+                              <div class="reviews-item__info">
+                                <div class="reviews-item__header d-flex flex-lg-row flex-md-row flex-sm-row flex-column">
+                                  <div class="reviews-item__header-left">
+                                    <span class="reviews-item__header-name">Henrry 2 balls</span>
+                                    <span class="reviews-item__header-day">2 дня назад</span>
+                                  </div>
+                                  <span class="reviews-item__header-character">негативный отзыв</span>
+                                </div>
+                                <p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam commodo tempus sem gravida sit volutpat, adipiscing. Pharetra, nulla turpis magna lorem urna, vel gravida. Laoreet egestas curabitur faucibus ut. Massa mauris amet mauris euismod tellus venenatis mi eget. In nisi, ultricies consequat porttitor eget. Tincidunt vivamus ligula sem nullam non. Faucibus scelerisque mollis tincidunt diam. Justo odio rhoncus pellentesque mauris, nunc sit. Sapien molestie commodo tincidunt nibh libero. Mi elementum massa adipiscing ac amet eu ac etiam. Quis arcu pellentesque congue vitae non amet, et. Suspendisse cras hendrerit arcu, at. Ultricies sollicitudin nisl vitae ornare. A, euismod felis, enim, tortor.</p>
+                              </div>
+                            </div>
+                            <div class="reviews-item d-flex">
+                              <div class="reviews-item__pic">
+                                <img src="images/reviews-item.png" alt="" class="reviews-item__img">
+                              </div>
+                              <div class="reviews-item__info">
+                                <div class="reviews-item__header d-flex flex-lg-row flex-md-row flex-sm-row flex-column">
+                                  <div class="reviews-item__header-left">
+                                    <span class="reviews-item__header-name">Henrry 2 balls</span>
+                                    <span class="reviews-item__header-day">2 дня назад</span>
+                                  </div>
+                                  <span class="reviews-item__header-character">негативный отзыв</span>
+                                </div>
+                                <p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam commodo tempus sem gravida sit volutpat, adipiscing. Pharetra, nulla turpis magna lorem urna, vel gravida. Laoreet egestas curabitur faucibus ut. Massa mauris amet mauris euismod tellus venenatis mi eget. In nisi, ultricies consequat porttitor eget. Tincidunt vivamus ligula sem nullam non. Faucibus scelerisque mollis tincidunt diam. Justo odio rhoncus pellentesque mauris, nunc sit. Sapien molestie commodo tincidunt nibh libero. Mi elementum massa adipiscing ac amet eu ac etiam. Quis arcu pellentesque congue vitae non amet, et. Suspendisse cras hendrerit arcu, at. Ultricies sollicitudin nisl vitae ornare. A, euismod felis, enim, tortor.</p>
+                              </div>
+                            </div>
+                            <div class="reviews-item d-flex">
+                              <div class="reviews-item__pic">
+                                <img src="images/reviews-item.png" alt="" class="reviews-item__img">
+                              </div>
+                              <div class="reviews-item__info">
+                                <div class="reviews-item__header d-flex">
+                                  <div class="reviews-item__header-left">
+                                    <span class="reviews-item__header-name">Henrry 2 balls</span>
+                                    <span class="reviews-item__header-day">2 дня назад</span>
+                                  </div>
+                                  <span class="reviews-item__header-character">негативный отзыв</span>
+                                </div>
+                                <p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam commodo tempus sem gravida sit volutpat, adipiscing. Pharetra, nulla turpis magna lorem urna, vel gravida. Laoreet egestas curabitur faucibus ut. Massa mauris amet mauris euismod tellus venenatis mi eget. In nisi, ultricies consequat porttitor eget. Tincidunt vivamus ligula sem nullam non. Faucibus scelerisque mollis tincidunt diam. Justo odio rhoncus pellentesque mauris, nunc sit. Sapien molestie commodo tincidunt nibh libero. Mi elementum massa adipiscing ac amet eu ac etiam. Quis arcu pellentesque congue vitae non amet, et. Suspendisse cras hendrerit arcu, at. Ultricies sollicitudin nisl vitae ornare. A, euismod felis, enim, tortor.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">4</div>
+                      <div class="tab-pane fade" id="v-pills-complaint" role="tabpanel" aria-labelledby="v-pills-complaint-tab">5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="row d-flex flex-lg-row flex-md-row flex-sm-row flex-column">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-12">             
+              <a href="#" class="logo logo__footer">
+                <div class="logo__footer-pic">
+                  <img src="images/logo-footer.svg" alt="" class="logo__footer-icon">    
+                </div>          
+                <div class="logo__info logo__footer-info">
+                  <span class="logo__info-top logo__footer-info-top">Comics</span>
+                  <span class="logo__info-bottom logo__footer-info-bottom">Market Place</span>
+                </div>                
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+              <div class="footer__list">
+                <a href="#" class="footer__link">Новости</a>
+                <a href="#" class="footer__link">О нас</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+              <div class="footer__list">
+                <a href="#" class="footer__link">Каталог</a>
+                <a href="#" class="footer__link">Черный список</a>
+                <a href="#" class="footer__link">Топ продавцов</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+              <div class="footer__list">
+                <a href="#" class="footer__link">Наши правила</a>
+                <a href="#" class="footer__link">Отзывы</a>
+                <a href="#" class="footer__link">Мошшеничество</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
